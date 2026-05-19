@@ -1,4 +1,4 @@
-# Cquirrel Reproduction
+# Query Processing over Streaming Data Using Flink
 
 This is a reproduction project of the official Cquirrel Demonstration\.
 
@@ -6,13 +6,11 @@ The original repos are:
 
 Cquirrel\-release: https://github\.com/hkustDB/Cquirrel\-release; 
 
-Cquirrel\-frontend:https://github\.com/hkustDB/Cquirrel\-Frontend; 
-
 ## Environment Requirement
 
 ### Operating System
 
-This reproduction is deployed on Linux \(AutoDL Cloud Server\), breaking the original MacOS\-only limitation\.
+This project is deployed on Linux \(AutoDL Cloud Server\), breaking the original MacOS\-only limitation\.
 
 ### Software Dependencies
 
@@ -44,11 +42,11 @@ Consistent with the official experimental environment:
 
 - `result` : Storage directory for test running results\.
 
-- `generated\-code\-xxx` : Generated Flink code of TPC\-H Query10 under different data scales \(sf0\.01/sf0\.1/sf1\)\.
+- `generated-code-xxx` : Generated Flink code of TPC\-H Query10 under different data scales \(sf0\.01/sf0\.1/sf1\)\.
 
-- `generated\_q10\.json` : SQL configuration file for Query10 test\.
+- `generated_q10.json` : SQL configuration file for Query10 test\.
 
-- `cquirrel\-core\-1\.0\-SNAPSHOT\.jar` : Core dependency package of Cquirrel\.
+- `cquirrel-core-1.0-SNAPSHOT.jar` : Core dependency package of Cquirrel\.
 
 ## Test Description
 
