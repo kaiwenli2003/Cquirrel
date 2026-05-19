@@ -7,46 +7,38 @@ The original repos are:
 Cquirrel\-release: https://github\.com/hkustDB/Cquirrel\-release; 
 
 ## Environment Requirement
-
 ### Operating System
-
-This project is deployed on Linux \(AutoDL Cloud Server\), breaking the original MacOS\-only limitation\.
+Ubuntu Linux (tested on AutoDL Cloud Server)
 
 ### Software Dependencies
 
-Consistent with the official experimental environment:
+The experimental environment follows the official project configuration:
 
-- Python 3\.8\.5
+| Component    | Version   |
+| ------------ | --------- |
+| Python       | 3.8.5     |
+| Java         | 1.8.0_261 |
+| Scala        | 2.12.13   |
+| Maven        | 3.6.3     |
+| sbt          | 1.3.13    |
+| yarn         | 1.22.10   |
+| Apache Flink | 1.11.2    |
 
-- Java 1\.8\.0\_261
+---
 
-- Scala 2\.12\.13
+## Repository Structure
 
-- Maven 3\.6\.3
+```text
+.
+├── core/                  # Core Cquirrel components
+├── gui/                   # Flask backend + React frontend
+├── script/                # Auxiliary scripts for project operation
 
-- sbt 1\.3\.13
-
-- yarn 1\.22\.10
-
-- Flink 1\.11\.2
-
-## Directory Description
-
-- `DemoTools/DataGenerator` : Tool for generating TPC\-H input datasets\.
-
-- `codegen` : Core component that transforms SQL into Flink programs\.
-
-- `gui` : Web visualization module, including Flask backend and React frontend\.
-
-- `script` : Auxiliary scripts for project operation\.
-
-- `result` : Storage directory for test running results\.
-
-- `generated-code-xxx` : Generated Flink code of TPC\-H Query10 under different data scales \(sf0\.01/sf0\.1/sf1\)\.
-
-- `generated_q10.json` : SQL configuration file for Query10 test\.
-
-- `cquirrel-core-1.0-SNAPSHOT.jar` : Core dependency package of Cquirrel\.
+├── configs/               # Query configuration files
+├── generated/             # Generated Flink programs
+├── DemoTools/             # TPC-H data generator
+└── result/                # Storage directory for test running results
+```
 
 ## Test Description
 

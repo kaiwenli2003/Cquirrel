@@ -1,0 +1,16 @@
+# mac
+.DS_Store
+
+# jupyter
+.ipynb_checkpoints/
+
+# python
+__pycache__/
+*.pyc
+
+# IDE
+.idea/
+.vscode/
+
+# temp
+tmp/
