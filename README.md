@@ -33,7 +33,6 @@ The experimental environment follows the official project configuration:
 ├── core/                  # Core Cquirrel components
 ├── gui/                   # Flask backend + React frontend
 ├── script/                # Auxiliary scripts for project operation
-
 ├── configs/               # Query configuration files
 ├── generated/             # Generated Flink programs
 ├── DemoTools/             # TPC-H data generator
